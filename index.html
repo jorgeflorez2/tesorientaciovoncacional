@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Vocacional</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        .category {
+            margin-top: 20px;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f0f8ff;
+            border: 1px solid #ccc;
+        }
+        .intro {
+            background-color: #f7f7f7;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .intro h2 {
+            font-size: 1.8em;
+            color: #333;
+        }
+        .intro p {
+            font-size: 1.2em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Test Vocacional</h1>
+
+    <div class="intro">
+        <h2>¡Descubre tu Vocación!</h2>
+        <p>¿Alguna vez te has preguntado cuál es la carrera perfecta para ti? Este test vocacional está diseñado para ayudarte a conocer más sobre tus intereses, fortalezas y pasiones.</p>
+        <p>En solo unos minutos, responderás preguntas que te guiarán hacia las opciones profesionales que mejor se adaptan a tu personalidad. ¡Es momento de descubrir tu verdadero potencial!</p>
+    </div>
+
+    <p>Responde las siguientes preguntas seleccionando "Sí" o "No" según te identifiques con cada afirmación.</p>
+
+    <form id="vocationalTest">
+        <div class="category" id="questions">
+            <ol>
+                <!-- Preguntas Realista -->
+                <li>¿Te gusta trabajar con herramientas y máquinas?
+                    <label><input type="radio" name="realista1" value="1"> Sí</label>
+                    <label><input type="radio" name="realista1" value="0"> No</label>
+                </li>
+                <li>¿Te gustaría trabajar en la construcción de edificios o infraestructura?
+                    <label><input type="radio" name="realista2" value="1"> Sí</label>
+                    <label><input type="radio" name="realista2" value="0"> No</label>
+                </li>
+                <li>¿Te interesa el diseño y análisis de sistemas mecánicos?
+                    <label><input type="radio" name="realista3" value="1"> Sí</label>
+                    <label><input type="radio" name="realista3" value="0"> No</label>
+                </li>
+                <li>¿Te gusta resolver problemas técnicos relacionados con máquinas y dispositivos?
+                    <label><input type="radio" name="realista4" value="1"> Sí</label>
+                    <label><input type="radio" name="realista4" value="0"> No</label>
+                </li>
+                <li>¿Te gustaría trabajar en el desarrollo de nuevos productos tecnológicos?
+                    <label><input type="radio" name="realista5" value="1"> Sí</label>
+                    <label><input type="radio" name="realista5" value="0"> No</label>
+                </li>
+                <li>¿Te interesa la automatización y la robótica?
+                    <label><input type="radio" name="realista6" value="1"> Sí</label>
+                    <label><input type="radio" name="realista6" value="0"> No</label>
+                </li>
+                <li>¿Prefieres actividades físicas sobre tareas de oficina?
+                    <label><input type="radio" name="realista7" value="1"> Sí</label>
+                    <label><input type="radio" name="realista7" value="0"> No</label>
+                </li>
+
+                <!-- Preguntas Investigador -->
+                <li>¿Te interesa realizar investigaciones científicas o experimentos?
+                    <label><input type="radio" name="investigador1" value="1"> Sí</label>
+                    <label><input type="radio" name="investigador1" value="0"> No</label>
+                </li>
+                <li>¿Te gusta analizar datos para resolver problemas complejos?
+                    <label><input type="radio" name="investigador2" value="1"> Sí</label>
+                    <label><input type="radio" name="investigador2" value="0"> No</label>
+                </li>
+                <li>¿Te atraen las áreas de biología, química o física?
+                    <label><input type="radio" name="investigador3" value="1"> Sí</label>
+                    <label><input type="radio" name="investigador3" value="0"> No</label>
+                </li>
+                <li>¿Te interesan temas relacionados con la antropología o arqueología?
+                    <label><input type="radio" name="investigador4" value="1"> Sí</label>
+                    <label><input type="radio" name="investigador4" value="0"> No</label>
+                </li>
+                <li>¿Prefieres trabajos que requieran investigación y desarrollo?
+                    <label><input type="radio" name="investigador5" value="1"> Sí</label>
+                    <label><input type="radio" name="investigador5" value="0"> No</label>
+                </li>
+
+                <!-- Preguntas Artístico -->
+                <li>¿Te gusta expresarte a través de la música, el arte o la literatura?
+                    <label><input type="radio" name="artistico1" value="1"> Sí</label>
+                    <label><input type="radio" name="artistico1" value="0"> No</label>
+                </li>
+                <li>¿Disfrutas diseñar o crear cosas nuevas?
+                    <label><input type="radio" name="artistico2" value="1"> Sí</label>
+                    <label><input type="radio" name="artistico2" value="0"> No</label>
+                </li>
+                <li>¿Te interesan actividades relacionadas con la fotografía o el cine?
+                    <label><input type="radio" name="artistico3" value="1"> Sí</label>
+                    <label><input type="radio" name="artistico3" value="0"> No</label>
+                </li>
+                <li>¿Prefieres trabajos creativos sobre tareas rutinarias?
+                    <label><input type="radio" name="artistico4" value="1"> Sí</label>
+                    <label><input type="radio" name="artistico4" value="0"> No</label>
+                </li>
+                <li>¿Te gustaría trabajar en áreas como diseño gráfico o moda?
+                    <label><input type="radio" name="artistico5" value="1"> Sí</label>
+                    <label><input type="radio" name="artistico5" value="0"> No</label>
+                </li>
+
+                <!-- Preguntas Social -->
+                <li>¿Te interesa ayudar a las personas a resolver sus problemas?
+                    <label><input type="radio" name="social1" value="1"> Sí</label>
+                    <label><input type="radio" name="social1" value="0"> No</label>
+                </li>
+                <li>¿Te gusta enseñar o capacitar a otros?
+                    <label><input type="radio" name="social2" value="1"> Sí</label>
+                    <label><input type="radio" name="social2" value="0"> No</label>
+                </li>
+                <li>¿Prefieres trabajos donde puedas interactuar con muchas personas?
+                    <label><input type="radio" name="social3" value="1"> Sí</label>
+                    <label><input type="radio" name="social3" value="0"> No</label>
+                </li>
+                <li>¿Te interesan temas relacionados con la psicología o sociología?
+                    <label><input type="radio" name="social4" value="1"> Sí</label>
+                    <label><input type="radio" name="social4" value="0"> No</label>
+                </li>
+                <li>¿Te gustaría trabajar en áreas como comunicación social o educación?
+                    <label><input type="radio" name="social5" value="1"> Sí</label>
+                    <label><input type="radio" name="social5" value="0"> No</label>
+                </li>
+
+                <!-- Preguntas de Hotelería y Turismo -->
+                <li>¿Te gusta trabajar en un ambiente dinámico y multicultural?
+                    <label><input type="radio" name="turismo1" value="1"> Sí</label>
+                    <label><input type="radio" name="turismo1" value="0"> No</label>
+                </li>
+                <li>¿Te interesa ayudar a las personas a planificar sus vacaciones?
+                    <label><input type="radio" name="turismo2" value="1"> Sí</label>
+                    <label><input type="radio" name="turismo2" value="0"> No</label>
+                </li>
+                <li>¿Tienes habilidades para gestionar eventos o actividades?
+                    <label><input type="radio" name="turismo3" value="1"> Sí</label>
+                    <label><input type="radio" name="turismo3" value="0"> No</label>
+                </li>
+                <li>¿Disfrutas aprender sobre diferentes culturas y tradiciones?
+                    <label><input type="radio" name="turismo4" value="1"> Sí</label>
+                    <label><input type="radio" name="turismo4" value="0"> No</label>
+                </li>
+                <li>¿Te gustaría trabajar en la gestión de hoteles o restaurantes?
+                    <label><input type="radio" name="turismo5" value="1"> Sí</label>
+                    <label><input type="radio" name="turismo5" value="0"> No</label>
+                </li>
+
+                <!-- Nuevas preguntas para Derecho -->
+                <li>¿Te interesa estudiar leyes y abogar por la justicia?
+                    <label><input type="radio" name="social6" value="1"> Sí</label>
+                    <label><input type="radio" name="social6" value="0"> No</label>
+                </li>
+                <li>¿Te gustaría ser parte del sistema judicial o trabajar en tribunales?
+                    <label><input type="radio" name="social7" value="1"> Sí</label>
+                    <label><input type="radio" name="social7" value="0"> No</label>
+                </li>
+                <li>¿Te interesa defender los derechos de las personas?
+                    <label><input type="radio" name="social8" value="1"> Sí</label>
+                    <label><input type="radio" name="social8" value="0"> No</label>
+                </li>
+                <li>¿Te gustaría trabajar como abogado o fiscal?
+                    <label><input type="radio" name="social9" value="1"> Sí</label>
+                    <label><input type="radio" name="social9" value="0"> No</label>
+                </li>
+                <li>¿Te atrae el estudio de leyes y políticas públicas?
+                    <label><input type="radio" name="social10" value="1"> Sí</label>
+                    <label><input type="radio" name="social10" value="0"> No</label>
+                </li>
+
+                <!-- Nuevas preguntas para Medicina -->
+                <li>¿Te interesa trabajar en el cuidado de la salud y bienestar de las personas?
+                    <label><input type="radio" name="medicina1" value="1"> Sí</label>
+                    <label><input type="radio" name="medicina1" value="0"> No</label>
+                </li>
+                <li>¿Te gustaría diagnosticar y tratar enfermedades?
+                    <label><input type="radio" name="medicina2" value="1"> Sí</label>
+                    <label><input type="radio" name="medicina2" value="0"> No</label>
+                </li>
+                <li>¿Te atrae la idea de estudiar anatomía y biología humana?
+                    <label><input type="radio" name="medicina3" value="1"> Sí</label>
+                    <label><input type="radio" name="medicina3" value="0"> No</label>
+                </li>
+                <li>¿Te gustaría trabajar en hospitales, clínicas o centros de salud?
+                    <label><input type="radio" name="medicina4" value="1"> Sí</label>
+                    <label><input type="radio" name="medicina4" value="0"> No</label>
+                </li>
+                <li>¿Te interesa el trabajo en equipos interdisciplinarios de salud?
+                    <label><input type="radio" name="medicina5" value="1"> Sí</label>
+                    <label><input type="radio" name="medicina5" value="0"> No</label>
+                </li>
+            </ol>
+        </div>
+
+        <button type="button" onclick="calculateResult()">Calcular Resultado</button>
+    </form>
+
+    <div class="result" id="result">
+        <h2>Tu resultado:</h2>
+        <p id="resultText">Completa el test y haz clic en "Calcular Resultado".</p>
+    </div>
+
+    <script>
+        function calculateResult() {
+            const categories = ["realista", "investigador", "artistico", "social", "medicina", "turismo"];
+            const careers = {
+                realista: ["Ingeniería Mecánica", "Agronomía", "Construcción"],
+                investigador: ["Ciencias Exactas", "Investigación Científica", "Medicina"],
+                artistico: ["Diseño Gráfico", "Bellas Artes", "Literatura"],
+                social: ["Psicología", "Trabajo Social", "Educación", "Derecho"],
+                medicina: ["Medicina General", "Cirugía", "Pediatría"],
+                turismo: ["Gestión Hotelera", "Turismo", "Agente de Viajes"]
+            };
+
+            let scores = {
+                realista: 0,
+                investigador: 0,
+                artistico: 0,
+                social: 0,
+                medicina: 0,
+                turismo: 0
+            };
+
+            categories.forEach(category => {
+                for (let i = 1; i <= 10; i++) {
+                    const input = document.querySelector(`input[name=${category}${i}]:checked`);
+                    if (input) {
+                        scores[category] += parseInt(input.value);
+                    }
+                }
+            });
+
+            const highestCategory = Object.keys(scores).reduce((a, b) => scores[a] > scores[b] ? a : b);
+            const resultText = `Tu categoría más afín es: <b>${highestCategory.charAt(0).toUpperCase() + highestCategory.slice(1)}</b>.<br>
+                                Las carreras que más se ajustan a tus respuestas son: ${careers[highestCategory].join(", ")}.`;
+            document.getElementById("resultText").innerHTML = resultText;
+        }
+    </script>
+</body>
+</html>
